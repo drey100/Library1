@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE = "https://ton-api.com";
+const API_BASE = "https://books-api-ov9a.onrender.com";
 
 export const getLivres = async () => {
   try {
