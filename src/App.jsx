@@ -4,7 +4,7 @@ import Inscription from './pages/Inscription';
 import Connexion from './pages/Connexion';
 import Profile from './pages/Profile';
 import CreateBook from './pages/CreateBook';
-import Navbar from './components/Navbar';
+import Navbar from './components/Layout';
 import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
@@ -12,7 +12,8 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Accueil />} />
+        <Route path="/" element={<Layout />}/>
+        <Route index element={<Accueil />} />
         <Route path="/Inscription" element={<Inscription />} />
         <Route path="/Connexion" element={<Connexion />} />
         <Route path="/profile" element={
